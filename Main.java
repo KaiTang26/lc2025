@@ -2,14 +2,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LinkedList list = new LinkedList();
+        DeleteNode237 list = new DeleteNode237();
+        list.print();
 
-        list.add(0, 1);
-        list.add(1, 2);
-        list.add(2, 3);
-        list.add(3, 4);
+        list.deleteNode(5);
+        System.out.println("**********");
 
-        System.out.println(list.contains(3));
+        list.print();
 
     }
 
