@@ -2,13 +2,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        StackLN stack = new StackLN();
+        String s = "(]";
 
-        stack.push(10);
+        ValidParentheses20 v = new ValidParentheses20();
 
-        stack.push(20);
-
-        System.out.println(stack.pop());
+        System.out.println(v.isValid(s));
 
     }
 
