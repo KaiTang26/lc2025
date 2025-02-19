@@ -2,13 +2,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        DeleteNode237 list = new DeleteNode237();
-        list.print();
+        StackLN stack = new StackLN();
 
-        list.deleteNode(5);
-        System.out.println("**********");
+        stack.push(10);
 
-        list.print();
+        stack.push(20);
+
+        System.out.println(stack.pop());
 
     }
 
