@@ -14,4 +14,16 @@ public class SameTree100 {
 
     }
 
+     public boolean isSameTree2 (TreeNode p, TreeNode q) {
+        // If both nodes are null, trees are identical at this point
+        if (p == null || q == null) {
+            return p == q;
+        }
+        
+        // Check current node values and recursively check left and right subtrees
+        return p.val == q.val 
+            && isSameTree(p.left, q.left) 
+            && isSameTree(p.right, q.right);
+    }
+
 }
