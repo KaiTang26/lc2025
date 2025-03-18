@@ -8,7 +8,7 @@ public class ValidateBST98 {
     private Result isValidBSTHelper(TreeNode node) {
 
         if (node == null) {
-            return new Result(false, -1, -1);
+            return new Result(true, -1, -1);
         }
 
         if (node.left == null && node.right == null) {
