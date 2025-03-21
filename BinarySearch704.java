@@ -20,16 +20,18 @@ public class BinarySearch704 {
             } else {
                 start = mid;
             }
-
         }
 
         if (nums[start] == target) {
             return start;
         }
+
         if (nums[end] == target) {
             return end;
         }
+
         return -1;
+
     }
 
 }
